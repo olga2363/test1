@@ -51,6 +51,9 @@ a{
 ul{
   list-style: none;
 }
+.zoom:hover {
+  transform: scale(1.1) !important;
+}
 
 .container{
   max-width: 1190px;
@@ -142,7 +145,13 @@ background-color: #ffff;
 display: flex;
 justify-content: center;
 letter-spacing: 4px;
+opacity: 1;
+transition: background 3s ease;
 }
+
+.button:hover{
+  background-color: #BDBDBD;
+}  
 
 .info-slider{
   position: relative;
@@ -151,7 +160,7 @@ letter-spacing: 4px;
 .info-slider__link{
 position: absolute;
 bottom: 0;
-left: 33%;
+left: 34.2%;
 
 }
 .info-slider__link-text{

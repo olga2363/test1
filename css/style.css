@@ -187,6 +187,18 @@ fill: #F9F9F9;
   color: #BDBDBD;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .company-info__container{
   max-width: 1170px;
   display: flex;
@@ -208,7 +220,6 @@ position: absolute;
 bottom: -30px;
 }
 
-
 .company-info__txt{
   padding-right: 70px;
 }
@@ -221,7 +232,9 @@ bottom: -30px;
   line-height: 25px;
   font-weight: 300;
   padding-bottom: 20px;
- 
+  animation-duration: 4s;
+  animation-name: slidein;
+
 }
 .company-info__img{
   padding: 60px 30px 60px;
